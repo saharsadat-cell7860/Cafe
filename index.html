@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velvet Café</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand" href="#home">
+
+                <i class="bi bi-cup-hot-fill"></i>
+
+                Velvet Café
+
+            </a>
+
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Menu -->
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="#home">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#menu">
+                            Menu
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#events">
+                            Events
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#faq">
+                            FAQ
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Modal Button -->
+
+                <button class="btn btn-coffee ms-lg-3" data-bs-toggle="modal" data-bs-target="#bookingModal">
+
+                    Book a Table
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO / CAROUSEL ================= -->
+
+    <section id="home">
+
+        <div id="cafeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <!-- Indicators -->
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2"></button>
+
+            </div>
+
+
+            <!-- Carousel Items -->
+
+            <div class="carousel-inner">
+
+
+                <!-- Slide 1 -->
+
+                <div class="carousel-item active">
+
+                    <img src="images/hero1.jpg" class="d-block w-100" alt="Fresh coffee">
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-small">
+                            WELCOME TO
+                        </span>
+
+                        <h1>
+                            Velvet Café
+                        </h1>
+
+                        <p>
+                            Where every cup tells a story.
+                        </p>
+
+                        <a href="#menu" class="btn btn-light">
+                            Explore Our Menu
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Slide 2 -->
+
+                <div class="carousel-item">
+
+                    <img src="images/hero2.jpg" class="d-block w-100" alt="Coffee and dessert">
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-small">
+                            FRESH & DELICIOUS
+                        </span>
+
+                        <h1>
+                            Made With Love
+                        </h1>
+
+                        <p>
+                            Fresh coffee and delicious treats every day.
+                        </p>
+
+                        <a href="#menu" class="btn btn-light">
+                            View Menu
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Slide 3 -->
+
+                <div class="carousel-item">
+
+                    <img src="images/hero3.jpg" class="d-block w-100" alt="Cozy cafe">
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-small">
+                            YOUR HAPPY PLACE
+                        </span>
+
+                        <h1>
+                            Cozy Moments
+                        </h1>
+
+                        <p>
+                            Relax, enjoy and make beautiful memories.
+                        </p>
+
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                            Reserve a Table
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Previous Button -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <!-- Next Button -->
+
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MENU / NAVS ================= -->
+
+    <section id="menu" class="section-padding">
+
+        <div class="container">
+
+
+            <!-- Section Title -->
+
+            <div class="section-title text-center">
+
+                <span>OUR MENU</span>
+
+                <h2>
+                    Taste Something Special
+                </h2>
+
+                <p>
+                    Freshly prepared favorites made for every moment.
+                </p>
+
+            </div>
+
+
+            <!-- Bootstrap Navs -->
+
+            <ul class="nav nav-pills justify-content-center menu-tabs mb-5" role="tablist">
+
+                <li class="nav-item">
+
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#coffee" type="button">
+
+                        <i class="bi bi-cup-hot"></i>
+
+                        Coffee
+
+                    </button>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#desserts" type="button">
+
+                        <i class="bi bi-cake2"></i>
+
+                        Desserts
+
+                    </button>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#breakfast" type="button">
+
+                        <i class="bi bi-egg-fried"></i>
+
+                        Breakfast
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+
+
+            <!-- Tab Content -->
+
+            <div class="tab-content">
+
+
+                <!-- COFFEE -->
+
+                <div class="tab-pane fade show active" id="coffee">
+
+                    <div class="row g-4">
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/coffee.jpg" alt="Cappuccino">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Cappuccino
+                                        </h4>
+
+                                        <span class="price">
+                                            $4.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Rich espresso with steamed milk
+                                        and creamy foam.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/coffee.jpg" alt="Latte">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Vanilla Latte
+                                        </h4>
+
+                                        <span class="price">
+                                            $5.00
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Smooth espresso with milk
+                                        and vanilla flavor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/coffee.jpg" alt="Americano">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Americano
+                                        </h4>
+
+                                        <span class="price">
+                                            $3.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Classic espresso with hot water.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DESSERTS -->
+
+                <div class="tab-pane fade" id="desserts">
+
+                    <div class="row g-4">
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/dessert.jpg" alt="Chocolate cake">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Chocolate Cake
+                                        </h4>
+
+                                        <span class="price">
+                                            $6.00
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Soft chocolate cake with
+                                        creamy chocolate frosting.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/dessert.jpg" alt="Cheesecake">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Cheesecake
+                                        </h4>
+
+                                        <span class="price">
+                                            $5.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Creamy cheesecake with
+                                        fresh berry topping.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/dessert.jpg" alt="Tiramisu">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Tiramisu
+                                        </h4>
+
+                                        <span class="price">
+                                            $6.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Classic Italian dessert
+                                        with coffee and mascarpone.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BREAKFAST -->
+
+                <div class="tab-pane fade" id="breakfast">
+
+                    <div class="row g-4">
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/breakfast.jpg" alt="Pancakes">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Pancakes
+                                        </h4>
+
+                                        <span class="price">
+                                            $7.00
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Fluffy pancakes served with
+                                        berries and maple syrup.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/breakfast.jpg" alt="Egg breakfast">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Classic Breakfast
+                                        </h4>
+
+                                        <span class="price">
+                                            $8.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Eggs, toast, vegetables
+                                        and fresh coffee.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-4">
+
+                            <div class="menu-card">
+
+                                <img src="images/breakfast.jpg" alt="Avocado toast">
+
+                                <div class="menu-content">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <h4>
+                                            Avocado Toast
+                                        </h4>
+
+                                        <span class="price">
+                                            $7.50
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Toasted bread with avocado,
+                                        eggs and herbs.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section-padding about-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <img src="images/about.jpg" class="img-fluid about-image" alt="Velvet Cafe interior">
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <span class="about-label">
+                        ABOUT VELVET CAFÉ
+                    </span>
+
+                    <h2>
+                        More Than Just Coffee
+                    </h2>
+
+                    <p>
+                        Velvet Café is a cozy place where great coffee,
+                        delicious food and warm conversations come together.
+                    </p>
+
+                    <p>
+                        We believe that every cup of coffee should create
+                        a small moment worth remembering.
+                    </p>
+
+
+                    <div class="row mt-4">
+
+
+                        <div class="col-6">
+
+                            <h3>
+                                10+
+                            </h3>
+
+                            <p>
+                                Coffee Flavors
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-6">
+
+                            <h3>
+                                5K+
+                            </h3>
+
+                            <p>
+                                Happy Guests
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section id="events" class="section-padding bg-light">
+
+        <div class="container">
+
+
+            <div class="section-title text-center">
+
+                <span>JOIN US</span>
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+                <p>
+                    Good coffee tastes even better with good company.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+
+                            <i class="bi bi-music-note-beamed"></i>
+
+                        </div>
+
+                        <h4>
+                            Live Music Night
+                        </h4>
+
+                        <p>
+                            Enjoy relaxing live music
+                            with your favorite coffee.
+                        </p>
+
+                        <span>
+                            Every Friday
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+
+                            <i class="bi bi-book"></i>
+
+                        </div>
+
+                        <h4>
+                            Book & Coffee
+                        </h4>
+
+                        <p>
+                            Spend a peaceful evening
+                            reading and enjoying coffee.
+                        </p>
+
+                        <span>
+                            Every Saturday
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="event-card">
+
+                        <div class="event-icon">
+
+                            <i class="bi bi-people"></i>
+
+                        </div>
+
+                        <h4>
+                            Friends Evening
+                        </h4>
+
+                        <p>
+                            Meet your friends and enjoy
+                            delicious drinks together.
+                        </p>
+
+                        <span>
+                            Every Sunday
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FAQ / COLLAPSE ================= -->
+
+    <section id="faq" class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <span>FAQ</span>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+            </div>
+
+
+            <div class="accordion" id="faqAccordion">
+
+
+                <!-- FAQ 1 -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqOne">
+
+                            What are your opening hours?
+
+                        </button>
+
+                    </h2>
+
+
+                    <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            We are open every day from
+                            8:00 AM to 10:00 PM.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 2 -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqTwo">
+
+                            Do you offer takeaway?
+
+                        </button>
+
+                    </h2>
+
+
+                    <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes. All of our drinks and most food items
+                            are available for takeaway.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 3 -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqThree">
+
+                            Do you have free Wi-Fi?
+
+                        </button>
+
+                    </h2>
+
+
+                    <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes. Free Wi-Fi is available for all guests.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 4 -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqFour">
+
+                            Can I reserve a table?
+
+                        </button>
+
+                    </h2>
+
+
+                    <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes. Click the Book a Table button
+                            to make a reservation.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <span>
+                        CONTACT US
+                    </span>
+
+                    <h2>
+                        Come Have a Coffee With Us
+                    </h2>
+
+                    <p>
+                        We would love to welcome you to Velvet Café.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="contact-info">
+
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            25 Coffee Street
+                        </p>
+
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            +123 456 789
+                        </p>
+
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            hello@velvetcafe.com
+                        </p>
+
+                        <p>
+                            <i class="bi bi-clock-fill"></i>
+                            8:00 AM - 10:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">
+
+                        Book a Table
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BOOKING MODAL ================= -->
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+
+                        <i class="bi bi-calendar-heart"></i>
+
+                        Reserve a Table
+
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+
+                <!-- Modal Body -->
+
+                <div class="modal-body">
+
+                    <form id="bookingForm">
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Full Name
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+
+                        </div>
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Date
+                                </label>
+
+                                <input type="date" class="form-control" required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Time
+                                </label>
+
+                                <input type="time" class="form-control" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Number of Guests
+                            </label>
+
+                            <select class="form-select" required>
+
+                                <option value="">
+                                    Select guests
+                                </option>
+
+                                <option>
+                                    1 Person
+                                </option>
+
+                                <option>
+                                    2 People
+                                </option>
+
+                                <option>
+                                    3 People
+                                </option>
+
+                                <option>
+                                    4 People
+                                </option>
+
+                                <option>
+                                    5+ People
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-coffee w-100">
+
+                            Confirm Reservation
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container text-center">
+
+
+            <h3>
+
+                <i class="bi bi-cup-hot-fill"></i>
+
+                Velvet Café
+
+            </h3>
+
+
+            <p>
+                Coffee, comfort and beautiful moments.
+            </p>
+
+
+            <div class="social-icons">
+
+                <i class="bi bi-facebook"></i>
+
+                <i class="bi bi-instagram"></i>
+
+                <i class="bi bi-twitter-x"></i>
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="mb-0">
+
+                © 2026 Velvet Café.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Custom JS -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
